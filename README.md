@@ -1,4 +1,27 @@
-# pruebaariadna
+# Ariadna Movies
+
+### Created by
+
+# Dwan Felipe Veloza Paez
+
+# step 1
+
+## Json server
+```
+npm i -g json-server 
+```
+## Go to route
+
+```
+cd src/assets
+```
+## Compiler
+
+```
+json-server --watch peliculas.json
+```
+
+# step 2
 
 ## Project setup
 ```

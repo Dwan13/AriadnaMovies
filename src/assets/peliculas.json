@@ -3,121 +3,170 @@
             "id": 1,
             "nombre": "BOHEMIAN RHAPSODY",
             "imagen": "https://i.ibb.co/XJ195gt/bohemian-rhapsody.jpg",
+            "mod": "https://i.ibb.co/XJ195gt/bohemian-rhapsody.jpg",
             "director": "Bryan Singer",
             "description": "Freddie Mercury desafía los estereotipos y se convierte en uno de los vocalistas más reconocidos de la música mundial. Después de dejar la banda Queen para seguir una carrera como solista, Mercury se reúne con la banda para dar una de las mejores actuaciones en la historia del rock 'n' roll.",
             "tiempo": 120,
-            "fecha": "02/11/2019"
+            "fecha": "02/11/2019",
+            "valoracion": 5
         },
         {
             "id": 2,
             "nombre": "VENOM",
             "imagen": "https://i.ibb.co/MfqxWGV/venom.jpg",
+            "mod": "https://i.ibb.co/MfqxWGV/venom.jpg",
             "director": "Ruben Fleischer",
             "description": "El periodista Eddie Brock está investigando a Carlton Drake, el célebre fundador de Life Foundation. Brock establece una simbiosis con un ente alienígena que le ofrece superpoderes, pero el ser se apodera de su personalidad y lo vuelve perverso.",
-            "tiempo": 120,
-            "fecha": "05/10/2019"
+            "tiempo": 140,
+            "fecha": "05/10/2019",
+            "valoracion": 2
         },
         {
             "id": 3,
             "nombre": "ADVENGERS INFINITY WAR",
             "imagen": "https://i.ibb.co/vmrKjSp/avengers-infinity-war.jpg",
+            "mod": "https://i.ibb.co/vmrKjSp/avengers-infinity-war.jpg",
             "director": "Joe Russo, Anthony Russo",
             "description": "Los superhéroes se alían para vencer al poderoso Thanos, el peor enemigo al que se han enfrentado. Si Thanos logra reunir las seis gemas del infinito: poder, tiempo, alma, realidad, mente y espacio, nadie podrá detenerlo.",
             "tiempo": 120,
-            "fecha": "27/04/2019"
+            "fecha": "27/04/2019",
+            "valoracion": 5
         },
         {
             "id": 4,
             "nombre": "FIRST MAN",
             "imagen": "https://i.ibb.co/V3Qv6n4/first-man.jpg",
+            "mod": "https://i.ibb.co/V3Qv6n4/first-man.jpg",
             "director": "Damien Chazelle",
             "description": "Una biografía sobre la vida del legendario astronauta estadounidense Neil Armstrong de 1961 a 1969, en su viaje hacia convertirse en el primer ser humano en caminar por la Luna.",
             "tiempo": 120,
-            "fecha": "18/10/2018"
+            "fecha": "18/10/2018",
+            "valoracion": 3
         },
         {
             "id": 5,
             "nombre": "HAN SOLO",
             "imagen": "https://i.ibb.co/f0Vgzc9/han-solo.jpg",
+            "mod": "https://i.ibb.co/f0Vgzc9/han-solo.jpg",
             "director": "Ron Howard",
             "description": "El joven Han Solo y su banda de contrabandistas pretenden robar coaxium del planeta Kessel. Dado que necesita una nave muy rápida para la misión, Solo contacta con Lando Calrissian, el propietario del Halcón Milenario.",
             "tiempo": 120,
-            "fecha": "10/05/2018"
+            "fecha": "10/05/2018",
+            "valoracion": 1
         },
         {
             "id": 6,
             "nombre": "INCREIBLES 2",
             "imagen": "https://i.ibb.co/t23BWCV/incredibles.jpg",
+            "mod": "https://i.ibb.co/t23BWCV/incredibles.jpg",
             "director": "Brad Bird",
             "description": "Helen es reclutada para ayudar a que la acción vuelva a la vida de los Súper, mientras Bob se enfrenta a la rutina de su vida diaria 'normal' en el hogar. En casa debe lidiar con un bebé que está a punto de descubrir sus superpoderes. Mientras tanto un nuevo villano trama un plan brillante y peligroso que lleva a pique toda la estabilidad conseguida y que solo Los Increíbles podrán afrontar juntos.",
             "tiempo": 120,
-            "fecha": "05/06/2018"
+            "fecha": "05/06/2018",
+            "valoracion": 2
         },
         {
             "id": 7,
             "nombre": "JURASSIC WORLD",
             "imagen": "https://i.ibb.co/DC8T9mR/jurassic-world.jpg",
+            "mod": "https://i.ibb.co/DC8T9mR/jurassic-world.jpg",
             "director": "Colin Trevorrow",
             "description": "Una nueva especie de dinosaurio, creada por los científicos de forma artificial y claramente más inteligente y peligrosa que los animales conocidos, ataca a los turistas que visitan el parque temático 'Jurassic World', situado en una isla frente a Costa Rica.",
             "tiempo": 120,
-            "fecha": "11/06/2015"
+            "fecha": "11/06/2015",
+            "valoracion": 4
         },
         {
             "id": 8,
             "nombre": "DEADPOOL",
             "imagen": "https://i.ibb.co/7jHdftC/deadpool.jpg",
+            "mod": "https://i.ibb.co/7jHdftC/deadpool.jpg",
             "director": "Tim Miller",
             "description": "Un exmercenario quien, tras haber sido sometido a un cruel experimento, adquiere el superpoder de sanar rápidamente y pretende vengarse del hombre que destrozó su vida.",
             "tiempo": 120,
-            "fecha": "11/02/2016"
+            "fecha": "11/02/2016",
+            "valoracion": 5
+        }, {
+            "id": 9,
+            "nombre": "AQUAMAN",
+            "imagen": "https://i.ibb.co/FYZhscw/banner-aquaman.jpg",
+            "mod": "https://i.ibb.co/sq6cst3/banner-aquaman-mob.jpg",
+            "director": "James Wan",
+            "description": "Aquaman debe recuperar el legendario Tridente de Atlan para salvar a la ciudad subacuática de Atlantis, y al mundo de la superficie, de su hermano hambriento de poder.",
+            "tiempo": 122,
+            "fecha": "27/12/2019",
+            "valoracion": 5
+        },
+        {
+            "id": 10,
+            "nombre": "BUMBLEBEE",
+            "imagen": "https://i.ibb.co/x8kbHcR/banner-bumblebee.jpg",
+            "mod": "https://i.ibb.co/g4zHcNd/banner-bumblebee-mob.jpg",
+            "director": "Travis Knight",
+            "description": "En 1987, Charlie, una adolescente, encuentra a Bumblebee, muy herido, en el depósito de chatarra al que había llegado mientras huía. Mientras lo restaura, Charlie percibe que lo que ha hallado no es un Volkswagen amarillo corriente.",
+            "tiempo": 116,
+            "fecha": "03/12/2018",
+            "valoracion": 2
         }
 
     ],
     "clasificaiones": [{
+        "img": "https://www.terapiadeparejaencostarica.com/wp-content/uploads/2017/11/drama-tera%C3%ADa-de-pareja-costa-rica.jpg",
         "nombre": "Drama",
         "id": 1
     }, {
+        "img": "https://concepto.de/wp-content/uploads/2018/09/comedia-e1536069171944.jpg",
         "nombre": "Comedia",
         "id": 2
     }, {
+        "img": "https://occidente.co/wp-content/uploads/2019/10/peliculas-halloween.jpg",
         "nombre": "Terror",
         "id": 3
     }, {
+        "img": "https://www.xn--sueo-iqa.net/wp-content/uploads/2014/10/sue%C3%B1o-con-disparos.jpg",
         "nombre": "Acción",
         "id": 4
     }, {
+        "img": "https://www.etapainfantil.com/wp-content/uploads/2017/04/Audiocuentos-infantiles-700x523.jpg",
         "nombre": "Infantíl",
         "id": 5
+    }, {
+        "img": "http://www.fepet.info/imagenes/w640/descarga4.jpg",
+        "nombre": "Aventura",
+        "id": 6
     }],
     "estrenos": [{
             "id": 1,
             "nombre": "AQUAMAN",
             "imagen": "https://i.ibb.co/FYZhscw/banner-aquaman.jpg",
             "mod": "https://i.ibb.co/sq6cst3/banner-aquaman-mob.jpg",
-            "director": "Bryan Singer",
-            "description": "Freddie Mercury desafía los estereotipos y se convierte en uno de los vocalistas más reconocidos de la música mundial. Después de dejar la banda Queen para seguir una carrera como solista, Mercury se reúne con la banda para dar una de las mejores actuaciones en la historia del rock 'n' roll.",
-            "tiempo": 120,
-            "fecha": "02/11/2019"
+            "director": "James Wan",
+            "description": "Aquaman debe recuperar el legendario Tridente de Atlan para salvar a la ciudad subacuática de Atlantis, y al mundo de la superficie, de su hermano hambriento de poder.",
+            "tiempo": 122,
+            "fecha": "27/12/2019",
+            "valoracion": 5
         },
         {
             "id": 2,
             "nombre": "BUMBLEBEE",
             "imagen": "https://i.ibb.co/x8kbHcR/banner-bumblebee.jpg",
             "mod": "https://i.ibb.co/g4zHcNd/banner-bumblebee-mob.jpg",
-            "director": "Ruben Fleischer",
-            "description": "El periodista Eddie Brock está investigando a Carlton Drake, el célebre fundador de Life Foundation. Brock establece una simbiosis con un ente alienígena que le ofrece superpoderes, pero el ser se apodera de su personalidad y lo vuelve perverso.",
-            "tiempo": 120,
-            "fecha": "05/10/2019"
+            "director": "Travis Knight",
+            "description": "En 1987, Charlie, una adolescente, encuentra a Bumblebee, muy herido, en el depósito de chatarra al que había llegado mientras huía. Mientras lo restaura, Charlie percibe que lo que ha hallado no es un Volkswagen amarillo corriente.",
+            "tiempo": 116,
+            "fecha": "03/12/2018",
+            "valoracion": 2
         },
         {
             "id": 3,
             "nombre": "VENOM",
             "imagen": "https://i.ibb.co/sWX1fSs/banner-venom.jpg",
             "mod": "https://i.ibb.co/YR0KFVs/banner-venom-mob.jpg",
-            "director": "Joe Russo, Anthony Russo",
-            "description": "Los superhéroes se alían para vencer al poderoso Thanos, el peor enemigo al que se han enfrentado. Si Thanos logra reunir las seis gemas del infinito: poder, tiempo, alma, realidad, mente y espacio, nadie podrá detenerlo.",
-            "tiempo": 120,
-            "fecha": "27/04/2019"
+            "director": "Ruben Fleischer",
+            "description": "El periodista Eddie Brock está investigando a Carlton Drake, el célebre fundador de Life Foundation. Brock establece una simbiosis con un ente alienígena que le ofrece superpoderes, pero el ser se apodera de su personalidad y lo vuelve perverso.",
+            "tiempo": 140,
+            "fecha": "05/10/2019",
+            "valoracion": 2
         }
     ]
 

@@ -1,3 +1,4 @@
+/* Modal principal basado en el componente v-dialog de vuetify y modificado por el autor */
 <template>
 <v-dialog
     v-model="modal"
@@ -8,10 +9,10 @@
       >
         <v-card tile>
           <v-toolbar-title
-            class="modal"
+            class="modalApp"
           >
             <button v-if="mostrarCerrar" @click="$emit('click', false)">
-          <v-icon>mdi-close</v-icon>
+          <v-icon class="icon hvr-grow">mdi-close</v-icon>
         </button>            
           </v-toolbar-title>
           <v-card-text>
@@ -60,8 +61,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.modal{
-  padding: 10px;
+.icon{
+  background-color: white;
+}
+.modalApp{
+  padding: 1% 2%;
   background-color: gray;
 }
 .dialog-content {
@@ -75,10 +79,9 @@ export default {
   }
 }
 
-.fullscreen {
-  @media (min-height: 800px) {
-    height: 70vh;
-  }
+@media (max-width: 1023px) and (max-height: 1023px) {
+  .modalApp{
+  padding: 0.5% 5% 4%;
 }
-
+}
 </style>

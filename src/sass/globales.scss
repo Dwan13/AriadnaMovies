@@ -1,4 +1,32 @@
+/* Variables globales */
+
+
+/* Se importan las clases animate.scss y hover.scss de la documentación de gitHub */
+
 @import 'animate';
+@import 'hover';
+#app {
+    font-family: "OpenSans-Bold", "OpenSans-BoldItalic", "OpenSans-ExtraBold";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #000;
+}
+
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url('OpenSans-Bold.ttf'), url(OpenSans-Bold.ttf) format('truetype'),
+}
+
+@font-face {
+    font-family: 'OpenSans-BoldItalic';
+    src: url('OpenSans-BoldItalic.ttf'), url(OpenSans-BoldItalic.ttf) format('truetype'),
+}
+
+@font-face {
+    font-family: 'OpenSans-ExtraBold';
+    src: url('OpenSans-ExtraBold.ttf'), url(OpenSans-ExtraBold.ttf) format('truetype'),
+}
+
 a {
     text-decoration: none;
 }

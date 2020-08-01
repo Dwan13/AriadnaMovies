@@ -1,3 +1,5 @@
+/* El componente carousel propuesto por el autor no se logro concretar por cuestiones de tiempo
+sin embargo se seguirá avanzando en el mismo para su correcta implementación */
 <template>
 <v-container class="animated fadeInLeft" fluid>
   

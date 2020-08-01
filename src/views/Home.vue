@@ -1,7 +1,20 @@
+<!-- Creado por Dwan Felipe Veloza Paez 
+  ############# Julio 2020 ###############
+  ----En este trabajo se plantea un ------
+  ----aplicativo para cinemas responsive,
+  ---- valiendoce de vue.js, axios y -------
+  -----vuetify--------------------------
+-->
+
 <template>
   <v-container fluid class="pt-0">
     <v-row class="estrenos">
+      <!-- v-carousel es un componente propio de vuetify 
+      que permite una interaccion agil con slides perfecto 
+      para este tipo de aplicativos -->
       <v-carousel :show-arrows="false" hide-delimiter-background>
+        <!-- El proceso de llenado se hace con ciclo for tanto 
+        para el carousel como las demas interacciones entre modales -->
         <v-carousel-item
           v-for="(item,i) in misestrenos"
           :key="i"
@@ -17,8 +30,10 @@
               </v-row>
               <v-row>
                 <v-col cols="6" align="center" class="pl-0 pr-1">
+                  <!-- Se utiliza la clase hvr-shrink de las variables 
+                  globales en la carpeta sass para animaciones con hover -->
                   <v-btn
-                    class="watch"
+                    class="watch hvr-shrink"
                     @click="(modal = true), (currentSlide = 2),cambiarestado2(item.imagen)"
                   >
                     <span class="spanAriadna">WATCH NOW</span>
@@ -26,14 +41,15 @@
                 </v-col>
                 <v-col cols="6" align="center" class="pl-0 pr-1">
                   <v-btn
-                    class="more"
+                    class="more hvr-shrink"
                     @click="(modal = true), (currentSlide = 1),cambiarestado(item.id,
                   item.description,
                   item.mod,
                   item.nombre,
                   item.director,
                   item.tiempo,
-                  item.fecha
+                  item.fecha,
+                  item.valoracion
                   )"
                   >
                     <span class="spanAriadna">MORE INFO</span>
@@ -42,11 +58,10 @@
               </v-row>
             </v-col>
           </v-row>
-
+<!-- El componente general modal permite accionar ventanas emergentes con la información solicitada -->
           <modal-app v-model="modal" :mostrarCerrar="mostrarCerrar">
-            <WatchNow @finished="mostrarCerrar = true" v-if="currentSlide == 2" :imagen="imagenes"></WatchNow>
+            <WatchNow v-if="currentSlide == 2" :imagen="imagenes"></WatchNow>
             <MoreInfo
-              @finished="mostrarCerrar = true"
               v-if="currentSlide == 1"
               :id="identificar"
               :description="descriptions"
@@ -55,15 +70,18 @@
               :director="directors"
               :tiempo="tiempos"
               :fecha="fechas"
+              :rating="rating"
             ></MoreInfo>
           </modal-app>
         </v-carousel-item>
       </v-carousel>
     </v-row>
+    <!-- Se invoca la vista tabs para optimizar espacio -->
     <tabs-app></tabs-app>
   </v-container>
 </template>
 <script>
+/* Se invoca los objetos y/o componentes WatchNow y MoreInfo del tipo watchNow y moreInfo de la carpeta modal */
 import WatchNow from "../views/modales/watchNow";
 import MoreInfo from "../views/modales/moreInfo";
 export default {
@@ -74,6 +92,7 @@ export default {
   data() {
     return {
       misestrenos: [],
+      mostrarCerrar: true,
       modal: false,
       descriptions: "",
       mods: "",
@@ -83,10 +102,12 @@ export default {
       fechas: "",
       identificar: 0,
       imagenes: "",
+      rating: 0,
       currentSlide: 0
     };
   },
   created() {
+    /* Se evidencia el uso de axios como herramienta Api-Rest del programa a partir del servidor local y el objeto json peliculas */
     this.axios
       .get("http://localhost:3000/estrenos")
       .then(res => {
@@ -97,7 +118,19 @@ export default {
       });
   },
   methods: {
-    cambiarestado(id, description, mod, nombre, director, tiempo, fecha) {
+    /* Estos métodos actuan localmente dentro de cada vista como un store; 
+    a medida que se escale el aplicativo estas variables seran consideradas 
+    dentro del propio store de vue.js */
+    cambiarestado(
+      id,
+      description,
+      mod,
+      nombre,
+      director,
+      tiempo,
+      fecha,
+      valoracion
+    ) {
       this.identificar = id;
       this.descriptions = description;
       this.mods = mod;
@@ -105,6 +138,7 @@ export default {
       this.directors = director;
       this.tiempos = tiempo;
       this.fechas = fecha;
+      this.rating = valoracion;
     },
     cambiarestado2(img) {
       this.imagenes = img;

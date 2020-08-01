@@ -1,0 +1,27 @@
+@import 'animate';
+a {
+    text-decoration: none;
+}
+
+.watch {
+    background-color: rgb(233, 218, 14) !important;
+    color: black !important;
+    border: 1px transparent solid;
+    width: 100% !important;
+}
+
+.more {
+    background-color: transparent !important;
+    border: 1px white solid;
+    color: white !important;
+    width: 100% !important;
+}
+
+@media (max-width: 1024px) {
+    body {
+        font-size: 10px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+}

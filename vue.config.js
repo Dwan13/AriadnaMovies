@@ -1,5 +1,9 @@
-module.exports = {
+/* module.exports = {
   "transpileDependencies": [
     "vuetify"
   ]
+} */
+// vue.config.js
+module.exports = {
+    publicPath: process.env.NODE_ENV === 'production' ? './' : '/'
 }

@@ -92,6 +92,8 @@ export default {
   data() {
     return {
       misestrenos: [],
+      mispopulares:[],
+      mispeliculas:[],
       mostrarCerrar: true,
       modal: false,
       descriptions: "",
@@ -107,15 +109,40 @@ export default {
     };
   },
   created() {
+    
+    /* Consumo el json local estrenos.json */
+    this.mispeliculas=require('../assets/movies.json');
+
+    /* Se realiza un filtrado al objeto json para garantizar que 
+              solo se imprima por pantalla aquellas películas que tengan una valoración de 5 */
+
+     var filtered = this.mispeliculas.filter(function(item) {
+        return item.estreno == true;
+      });
+      this.misestrenos = filtered;
+  
+      var filtered2 = this.mispeliculas.filter(function(item) {
+        return item.valoracion == 5;
+      });
+      this.mispopulares = filtered2;
+
+      /* Añadiendo peliculas al store */
+    this.$store.commit("peliculas",this.mispeliculas);
+       this.$store.commit("estrenos",this.misestrenos);
+          this.$store.commit("populares",this.mispopulares);
+    
+
+
     /* Se evidencia el uso de axios como herramienta Api-Rest del programa a partir del servidor local y el objeto json peliculas */
-    this.axios
+    
+    /* this.axios
       .get("http://localhost:3000/estrenos")
       .then(res => {
         this.misestrenos = res.data;
       })
       .catch(e => {
         console(e.response);
-      });
+      }); */
   },
   methods: {
     /* Estos métodos actuan localmente dentro de cada vista como un store; 

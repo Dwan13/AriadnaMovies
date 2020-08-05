@@ -1,0 +1,25 @@
+[{
+    "img": "https://www.terapiadeparejaencostarica.com/wp-content/uploads/2017/11/drama-tera%C3%ADa-de-pareja-costa-rica.jpg",
+    "nombre": "Drama",
+    "id": 1
+}, {
+    "img": "https://concepto.de/wp-content/uploads/2018/09/comedia-e1536069171944.jpg",
+    "nombre": "Comedia",
+    "id": 2
+}, {
+    "img": "https://occidente.co/wp-content/uploads/2019/10/peliculas-halloween.jpg",
+    "nombre": "Terror",
+    "id": 3
+}, {
+    "img": "https://www.xn--sueo-iqa.net/wp-content/uploads/2014/10/sue%C3%B1o-con-disparos.jpg",
+    "nombre": "Acción",
+    "id": 4
+}, {
+    "img": "https://www.etapainfantil.com/wp-content/uploads/2017/04/Audiocuentos-infantiles-700x523.jpg",
+    "nombre": "Infantíl",
+    "id": 5
+}, {
+    "img": "http://www.fepet.info/imagenes/w640/descarga4.jpg",
+    "nombre": "Aventura",
+    "id": 6
+}]

@@ -20,14 +20,14 @@
 
         <v-tab-item>
           <!-- El componente organizador utiliza un prop llamada miarray que permite distribuir las películar
-          de acuerdo con el tipo de petición -->
-          <Organizador :miarray="mispeliculas"></Organizador>
+          de acuerdo con el tipo de petición-->
+          <Organizador :miarray="Peliculas()"></Organizador>
         </v-tab-item>
         <v-tab-item>
-          <Organizador :miarray="misestrenos"></Organizador>
+          <Organizador :miarray="Estrenos()"></Organizador>
         </v-tab-item>
         <v-tab-item>
-          <Organizador :miarray="mispopulares"></Organizador>
+          <Organizador :miarray="Populares()"></Organizador>
         </v-tab-item>
         <v-tab-item></v-tab-item>
         <v-tab-item></v-tab-item>
@@ -43,53 +43,15 @@ export default {
   components: {
     Organizador
   },
-  data() {
-    return {
-      mispeliculas: [],
-      misestrenos: [],
-      mispopulares: []
-    };
-  },
-  created() {
-        /* Aplicando axios como Api-Rest */
-
-    this.axios
-      .get("http://localhost:3000/peliculas")
-      .then(res => {
-        this.mispeliculas = res.data;
-      })
-      .catch(e => {
-        console(e.response);
-      });
-  },
   methods: {
-    buscarPopulares() {
-          /* Aplicando axios como Api-Rest */
-      this.axios
-        .get("http://localhost:3000/peliculas")
-        .then(res => {
-          this.mispeliculas = res.data;
-              /* Se realiza un filtrado al objeto json para garantizar que 
-              solo se imprima por pantalla aquellas películas que tengan una valoración de 5 */
-          var filtered = this.mispeliculas.filter(function(item) {
-            return item.valoracion == 5;
-          });
-          this.mispopulares = filtered;
-        })
-        .catch(e => {
-          console(e.response);
-        });
+    Peliculas(){
+         return this.$store.state.misPeliculas
     },
-    llmarEstrenos() {
-                /* Aplicando axios como Api-Rest */
-      this.axios
-        .get("http://localhost:3000/estrenos")
-        .then(res => {
-          this.misestrenos = res.data;
-        })
-        .catch(e => {
-          console(e.response);
-        });
+    Estrenos(){
+ return this.$store.state.misEstrenos
+    },
+    Populares() {
+      return this.$store.state.misPopulares
     }
   }
 };

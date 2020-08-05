@@ -48,15 +48,17 @@ export default {
     };
   },
   created() {
+
+    this.miscategorias=require('../assets/categorias.json');
     /* Aplicando axios como Api-Rest */
-    this.axios
+    /* this.axios
       .get("http://localhost:3000/clasificaiones")
       .then(res => {
         this.miscategorias = res.data;
       })
       .catch(e => {
         console(e.response);
-      });
+      }); */
   }
 };
 </script>
